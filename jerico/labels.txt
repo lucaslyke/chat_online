@@ -1,4 +1,0 @@
-open\None
-time\getDate
-weather\getWeather
-time\getTime
