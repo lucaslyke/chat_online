@@ -1,4 +1,0 @@
-# JohnStone
-
-Automação de catalogo
-
