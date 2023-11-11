@@ -1,0 +1,89 @@
+/* section */
+section.quadros {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 200px 100px 80px 100px;
+  background-color: var(--cor-cinza-escuro);
+}
+section.quadros .itens {
+  display: flex;
+  justify-content: space-between;
+}
+section.quadros .itens .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: calc(33.33% - 10px);
+}
+section.quadros .itens .item img {
+  position: absolute;
+  bottom: 150px;
+  width: 100%;
+  max-width: 180px;
+}
+section.quadros .itens .item .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+}
+section.quadros .itens .item .texto h3 {
+  font-family: 'montserrat-bold';
+  color: var(--cor-principal);
+  font-size: clamp(2rem, 1vw, 3rem);
+  line-height: 1.2;
+}
+section.quadros .itens .item .texto h4 {
+  font-family: 'montserrat-bold';
+  color: var(--cor-branco);
+  font-size: clamp(2rem, 1vw, 3rem);
+  line-height: 1.2;
+}
+section.quadros .itens .item .texto p {
+  font-family: 'montserrat-medium';
+  font-size: clamp(1rem, 1vw, 1.2rem);
+  color: var(--cor-branco);
+  line-height: 1.5;
+  margin: 10px 0 0 0;
+}
+/* Responsivo */
+@media screen and (max-width: 1000px) {
+  section.quadros {
+    flex-direction: column-reverse;
+    padding: 50px 0 50px 0;
+  }
+  section.quadros .itens {
+    display: flex;
+    overflow-x: scroll;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 10px 0 20px;
+    margin: 0;
+    scrollbar-width: none;
+  }
+  section.quadros .itens::-webkit-scrollbar {
+    display: none;
+  }
+  section.quadros .itens .item {
+    width: 300px;
+    max-width: 300px;
+    min-width: 300px;
+    padding: 150px 0 0 0;
+    margin: 0 10px 0 0;
+  }
+  section.quadros .itens .item img {
+    bottom: 150px;
+    max-width: 260px;
+  }
+  section.quadros .itens .item .quadro {
+    padding: 20px;
+  }
+}

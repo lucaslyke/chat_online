@@ -1,0 +1,16 @@
+/* ------ #1 HEADER ------ */
+
+header li > a {
+
+    display: flex;
+    position: relative;
+    line-height: inherit;
+}
+
+/* ------ #1 HEADER "a. Header top"------ */
+
+.header-top .wrapper {
+
+    font-size: var(--font-small);
+    font-weight: var(--fw3);
+}
